@@ -4,20 +4,20 @@
  * main - Main function for a simple shell
  *
  * Description:
- * 	This function implements a basic shell, which repeatedly prompts
- * 	the user for input, reads the input, tokenizes it into individual
- * 	commands, and executes those commands. It supports built-in commands
- * 	like "cd" to change the current working directory and "exit" to exit
- * 	the shell.
+ *	This function implements a basic shell, which repeatedly prompts
+ *	the user for input, reads the input, tokenizes it into individual
+ *	commands, and executes those commands. It supports built-in commands
+ *	like "cd" to change the current working directory and "exit" to exit
+ *	the shell.
  *
- * 	The main loop continues until the user enters the "exit" command or
- * 	encounters an error while reading input. The function frees memory
- * 	allocated for input and tokens after processing each command.
+ *	The main loop continues until the user enters the "exit" command or
+ *	encounters an error while reading input. The function frees memory
+ *	allocated for input and tokens after processing each command.
  *
  * Return: returns 0 to indicate successful execution of the shell
  */
 
-int main()
+int main(void)
 {
 	char *input;
 	char **args;

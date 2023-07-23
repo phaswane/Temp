@@ -24,12 +24,12 @@
  *	the program with an appropriate error code using exit(EXIT_FAILURE).
  */
 
-char** tokenize_input(char* input)
+char **tokenize_input(char *input)
 {
 	int arg_count;
 	char *token;
 
-	char **args = (char**)malloc(MAX_ARGS * sizeof(char*));
+	char **args = (char **)malloc(MAX_ARGS * sizeof(char *));
 
 	if (!args)
 	{

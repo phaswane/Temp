@@ -11,7 +11,7 @@
 #define MAX_INPUT_LENGTH 1024
 #define MAX_ARGS 64
 
-char* read_input();
+char* read_input(void);
 char** tokenize_input(char* input);
 int execute_command(char **args);
 int handle_builtin(char **args);

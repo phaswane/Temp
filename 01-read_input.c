@@ -17,9 +17,9 @@
  *	occurs during input or end-of-file is reached, returns NULL.
  */
 
-char* read_input()
+char *read_input(void)
 {
-	char *user_input = (char*)malloc(MAX_INPUT_LENGTH);
+	char *user_input = (char *)malloc(MAX_INPUT_LENGTH);
 
 	if (!user_input)
 	{

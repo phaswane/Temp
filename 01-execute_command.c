@@ -27,14 +27,14 @@ int execute_command(char **args)
 	}
 	else if (pid < 0)
 	{
-                perror("fork");
+		perror("fork");
 	}
 	else
 	{
-		do{
+		do {
 			waitpid(pid, &status, WUNTRACED);
 
-		}while (!WIFEXITED(status) && !WIFSIGNALED(status));
+		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
 
 	return (1);
